@@ -190,6 +190,45 @@ function Index() {
         </div>
       </section>
 
+      {/* VALUE PROPOSITION */}
+      <section className="py-24 px-5 bg-background">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="text-sm font-bold uppercase tracking-[0.3em] text-secondary">Our Value Proposition</span>
+            <h2 className="mt-3 text-4xl md:text-6xl uppercase leading-[0.95]">
+              Not another bottle.<br/>A <span className="text-primary">complete kitchen experience.</span>
+            </h2>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
+            {[
+              ["Cook better","Real EVOO from the very first sauté."],
+              ["Finish better","The drizzle that turns the dish."],
+              ["Eat better","Premium ingredients, every single day."],
+              ["Italian moments","Simple meals, unforgettable bites."],
+            ].map(([t,d])=>(
+              <div key={t} className="bg-[var(--brand-cream)] border-2 border-foreground rounded-2xl p-6 hover:bg-primary hover:text-primary-foreground transition">
+                <div className="text-3xl font-display uppercase">{t}</div>
+                <p className="text-sm opacity-80 mt-2">{d}</p>
+              </div>
+            ))}
+          </div>
+          <div className="bg-foreground text-background rounded-3xl p-10 grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 className="text-3xl md:text-4xl uppercase">CIAO! combines</h3>
+              <p className="mt-2 text-background/70">Here, you don't just buy olive oil. You bring the real taste of Sicily into your everyday routine.</p>
+              <a href="#shop" className="inline-block mt-6 bg-primary text-primary-foreground px-7 py-4 font-bold uppercase rounded-full hover:bg-secondary transition">
+                Shop with discount
+              </a>
+            </div>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-2 text-sm">
+              {["Real Sicilian origin","Premium extra virgin","Organic & Kosher","Zero blend purity","Cold pressed","Modern & memorable","Premium & fun brand"].map(x=>(
+                <li key={x} className="flex gap-2"><span className="text-secondary font-black">✓</span>{x}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* COOKING + FINISHING */}
       <section id="cooking" className="py-24 px-5">
         <div className="max-w-6xl mx-auto">
