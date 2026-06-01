@@ -163,5 +163,42 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: 0.01em;
+  }
+}
+
+/* Checkered Italian pattern */
+.checker-band {
+  background-image:
+    linear-gradient(45deg, var(--brand-red) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--brand-red) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--brand-red) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--brand-red) 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0;
+  background-color: var(--brand-cream);
+}
+.ciao-script {
+  font-family: var(--font-script);
+  font-weight: 700;
+  color: var(--brand-red);
+  transform: rotate(-3deg);
+  display: inline-block;
+}
+@keyframes drizzle {
+  0% { transform: translateY(-10px) rotate(0deg); opacity: 0; }
+  20% { opacity: 1; }
+  100% { transform: translateY(20px) rotate(8deg); opacity: 0; }
+}
+.animate-drizzle { animation: drizzle 2.4s ease-in infinite; }
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+.animate-float { animation: float-slow 5s ease-in-out infinite; }
   }
 }
