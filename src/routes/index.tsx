@@ -330,6 +330,66 @@ function Index() {
         </div>
       </section>
 
+      {/* THE PROOF IS IN THE FLAVOR */}
+      <section className="py-24 px-5 bg-background">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="text-sm font-bold uppercase tracking-[0.3em] text-primary">The Proof</span>
+            <h2 className="mt-3 text-4xl md:text-6xl uppercase">Is in the Flavor</h2>
+            <p className="mt-5 max-w-2xl mx-auto text-muted-foreground">
+              People may notice the design first. But when they taste CIAO!, they understand the difference.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-5 mb-10">
+            {[
+              ["★★★★★","\"Tastes like Italy in a bottle. The squeeze is a game-changer.\"","— Marta R."],
+              ["★★★★★","\"Bold, fresh, real. The finishing oil transformed my pasta nights.\"","— Daniel K."],
+              ["★★★★★","\"Worth every penny. My kitchen smells like Sicily.\"","— Priya S."],
+            ].map(([stars,quote,name])=>(
+              <article key={name} className="bg-[var(--brand-cream)] border-2 border-foreground rounded-2xl p-6">
+                <div className="text-primary text-lg">{stars}</div>
+                <p className="mt-3 italic">{quote}</p>
+                <p className="mt-4 text-sm font-bold uppercase tracking-wider">{name}</p>
+              </article>
+            ))}
+          </div>
+          <ul className="grid sm:grid-cols-2 lg:grid-cols-5 gap-3 text-sm">
+            {["Positive marketplace reviews","Excellent product acceptance","Growing in the US market","Sensory experience from first use","Complete daily + gift portfolio"].map(x=>(
+              <li key={x} className="bg-secondary text-secondary-foreground rounded-full px-4 py-2.5 text-center font-medium">{x}</li>
+            ))}
+          </ul>
+          <div className="text-center mt-10">
+            <a href="#shop" className="inline-block bg-primary text-primary-foreground px-7 py-4 font-bold uppercase rounded-full hover:bg-foreground transition">
+              Try CIAO! with 15% OFF
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* WHO IS CIAO FOR — standalone */}
+      <section className="py-24 px-5 bg-[var(--brand-cream)]">
+        <div className="max-w-5xl mx-auto text-center">
+          <span className="text-sm font-bold uppercase tracking-[0.3em] text-primary">Who is CIAO! for?</span>
+          <h2 className="mt-3 text-4xl md:text-6xl uppercase">For people who value<br/>food, quality & experience.</h2>
+          <div className="mt-10 flex flex-wrap justify-center gap-3">
+            {[
+              "Loves Italian food","Cooks at home","Premium ingredients","Eat better every day",
+              "Values organic","Hosts friends & family","Appreciates design","Tasteful gifting","Turns simple into special",
+            ].map(x=>(
+              <span key={x} className="bg-background border-2 border-foreground rounded-full px-5 py-2.5 text-sm font-bold uppercase tracking-wide hover:bg-primary hover:text-primary-foreground hover:border-primary transition">
+                {x}
+              </span>
+            ))}
+          </div>
+          <p className="mt-10 text-lg text-muted-foreground max-w-xl mx-auto">
+            If you believe good food starts with good ingredients, <strong className="text-foreground">CIAO! is for you.</strong>
+          </p>
+          <a href="#shop" className="inline-block mt-6 bg-foreground text-background px-7 py-4 font-bold uppercase rounded-full hover:bg-primary transition">
+            Bring CIAO! to my kitchen
+          </a>
+        </div>
+      </section>
+
       {/* WHY NOT ANOTHER + WHO IS IT FOR */}
       <section className="py-24 px-5">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
@@ -341,13 +401,17 @@ function Index() {
               ))}
             </ul>
           </div>
-          <div className="bg-primary text-primary-foreground border-4 border-foreground rounded-3xl p-8">
-            <h3 className="text-3xl md:text-4xl uppercase">Who is CIAO! for?</h3>
-            <ul className="mt-6 space-y-2">
-              {["People who love Italian food","People who enjoy cooking at home","People who want premium ingredients","People who value organic products","People who love hosting friends","People who appreciate design","People looking for a tasteful gift"].map(x=>(
-                <li key={x} className="flex gap-3"><span className="font-black">→</span>{x}</li>
-              ))}
-            </ul>
+          <div className="bg-primary text-primary-foreground border-4 border-foreground rounded-3xl p-8 flex flex-col justify-between">
+            <div>
+              <h3 className="text-3xl md:text-4xl uppercase">Premium. Fun.<br/>Truly Sicilian.</h3>
+              <p className="mt-4 opacity-90">
+                Other olive oils may look premium. But many have generic origin, little transparency, little personality.
+                CIAO! is made to be <strong>used, displayed and remembered.</strong>
+              </p>
+            </div>
+            <a href="#shop" className="inline-block mt-6 bg-background text-foreground px-7 py-4 font-bold uppercase rounded-full hover:bg-foreground hover:text-background transition self-start">
+              Choose CIAO! now
+            </a>
           </div>
         </div>
       </section>
