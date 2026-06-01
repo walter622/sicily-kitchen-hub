@@ -7,6 +7,7 @@ import chiliContext from "@/assets/Chili_Context.asset.json";
 import rosemaryContext from "@/assets/Rosemary_Context.asset.json";
 import finishing from "@/assets/500_FINISHING_AF_BG_ZERO.asset.json";
 import ciaoLogo from "@/assets/ciao-logo.png.asset.json";
+import kitchenSet from "@/assets/kitchen-set.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -28,23 +29,22 @@ function Index() {
     <main className="bg-background text-foreground overflow-x-hidden">
       {/* NAV */}
       <header className="sticky top-0 z-50 bg-background/85 backdrop-blur border-b border-border">
-        <div className="h-2 checker-band" />
+        <div className="h-7 checker-band" />
         <div className="max-w-7xl mx-auto flex items-center justify-between px-5 py-3">
           <a href="#" className="block leading-none">
             <img src={ciaoLogo.url} alt="CIAO! Sicily" className="h-10 md:h-12 w-auto" />
           </a>
           <nav className="hidden md:flex gap-8 text-sm font-semibold uppercase tracking-wider">
-            <a href="#why" className="hover:text-primary">Why CIAO!</a>
-            <a href="#cooking" className="hover:text-primary">Cooking + Finishing</a>
-            <a href="#infused" className="hover:text-primary">Infused</a>
+            <a href="#" className="hover:text-primary">Home</a>
             <a href="#shop" className="hover:text-primary">Shop</a>
-            <a href="#faq" className="hover:text-primary">FAQ</a>
+            <a href="#faq" className="hover:text-primary">Contact Us</a>
+            <a href="#why" className="hover:text-primary">Our Story</a>
           </nav>
           <a href="#shop" className="bg-primary text-primary-foreground px-5 py-2.5 text-sm font-bold uppercase tracking-wide rounded-full hover:bg-[var(--brand-red-dark)] transition shadow-[var(--shadow-bold)]">
             Shop 15% OFF
           </a>
         </div>
-        <div className="h-2 checker-band" />
+        <div className="h-7 checker-band" />
       </header>
 
       {/* HERO */}
@@ -55,14 +55,14 @@ function Index() {
             <span className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest">
               <span className="w-2 h-2 rounded-full bg-[var(--brand-cream)]" /> Prodotto in Italia, Sicilia
             </span>
-            <h1 className="mt-6 text-5xl md:text-7xl leading-[0.95] uppercase">
-              Real <span className="text-primary">Sicilian</span><br/>
-              Extra Virgin<br/>
-              Olive Oil
+            <h1 className="mt-6 text-5xl md:text-7xl leading-[0.95] uppercase text-primary">
+              New Cooking<br/>
+              &amp; Finishing<br/>
+              Kit
             </h1>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-xl">
-              For everyday cooking and finishing. Premium, organic, zero blend, cold pressed —
-              created to turn simple meals into Italian moments.
+              Two bottles. One mission: make every meal taste like Italy. Premium, organic,
+              zero blend, cold pressed Sicilian EVOO — one to cook, one to finish.
             </p>
             <p className="mt-4 font-display text-2xl text-secondary tracking-wide">
               From the pan to the plate.<br/>
@@ -70,7 +70,7 @@ function Index() {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="#shop" className="bg-primary text-primary-foreground px-7 py-4 font-bold uppercase tracking-wide rounded-full shadow-[var(--shadow-bold)] hover:scale-[1.03] transition">
-                Shop CIAO! — 15% OFF
+                Get the Kit — 15% OFF
               </a>
               <a href="#why" className="border-2 border-foreground px-7 py-4 font-bold uppercase tracking-wide rounded-full hover:bg-foreground hover:text-background transition">
                 Watch the story
@@ -87,10 +87,10 @@ function Index() {
           </div>
 
           <div className="relative">
-            <div className="absolute -inset-6 bg-gradient-to-br from-primary to-secondary rounded-[2.5rem] rotate-3 opacity-90" />
-            <div className="relative bg-[var(--brand-cream)] rounded-[2rem] p-8 shadow-[var(--shadow-card)] border-4 border-foreground">
-              <img src={finishing.url} alt="CIAO Finishing Sicilian EVOO bottle" className="w-full h-auto animate-float drop-shadow-2xl" />
-              <div className="absolute -top-4 -right-4 bg-secondary text-secondary-foreground rounded-full w-24 h-24 flex flex-col items-center justify-center font-display text-center rotate-12 shadow-lg">
+            <div className="absolute -inset-6 bg-gradient-to-br from-primary to-secondary rounded-[2.5rem] rotate-2 opacity-90" />
+            <div className="relative bg-[var(--brand-cream)] rounded-[2rem] overflow-hidden shadow-[var(--shadow-card)] border-4 border-foreground">
+              <img src={kitchenSet.url} alt="CIAO! Kitchen Set — Cooking and Finishing Extra Virgin Olive Oil on the table" className="w-full h-auto block" />
+              <div className="absolute -top-4 -right-4 bg-secondary text-secondary-foreground rounded-full w-24 h-24 flex flex-col items-center justify-center font-display text-center rotate-12 shadow-lg z-10">
                 <span className="text-3xl leading-none">15%</span>
                 <span className="text-[10px] uppercase tracking-wider">OFF</span>
               </div>
