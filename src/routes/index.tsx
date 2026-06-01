@@ -29,7 +29,6 @@ function Index() {
     <main className="bg-background text-foreground overflow-x-hidden">
       {/* NAV */}
       <header className="sticky top-0 z-50 bg-background/85 backdrop-blur border-b border-border">
-        <div className="h-7 checker-band" />
         <div className="max-w-7xl mx-auto flex items-center justify-between px-5 py-3">
           <a href="#" className="block leading-none">
             <img src={ciaoLogo.url} alt="CIAO! Sicily" className="h-10 md:h-12 w-auto" />
@@ -44,7 +43,7 @@ function Index() {
             Shop 15% OFF
           </a>
         </div>
-        <div className="h-7 checker-band" />
+        <div className="h-6 checker-band" />
       </header>
 
       {/* HERO */}
