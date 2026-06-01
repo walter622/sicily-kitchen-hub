@@ -63,7 +63,7 @@ function Index() {
               Two bottles. One mission: make every meal taste like Italy. Premium, organic,
               zero blend, cold pressed Sicilian EVOO — one to cook, one to finish.
             </p>
-            <p className="mt-4 font-display text-2xl text-secondary tracking-wide">
+            <p className="mt-4 ciao-script text-3xl text-secondary tracking-wide">
               From the pan to the plate.<br/>
               From ordinary to <em className="not-italic text-primary">unforgettable.</em>
             </p>
@@ -159,7 +159,7 @@ function Index() {
                 <li key={x} className="flex gap-2 text-sm"><span className="text-secondary font-black">✓</span>{x}</li>
               ))}
             </ul>
-            <p className="mt-6 font-display text-2xl text-primary">Use better olive oil every day.</p>
+            <p className="mt-6 ciao-script text-3xl text-primary">Use better olive oil every day.</p>
             <a href="#shop" className="inline-block mt-6 bg-primary text-primary-foreground px-7 py-4 font-bold uppercase rounded-full hover:bg-[var(--brand-red-dark)] transition">
               Choose my CIAO! now
             </a>
