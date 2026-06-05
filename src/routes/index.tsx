@@ -13,7 +13,6 @@ import ciaoCooking from "@/assets/ciao-cooking.png.asset.json";
 import finishingBottle from "@/assets/ciao-finishing-bottle.png.asset.json";
 import finishingTable from "@/assets/ciao-finishing-table.jpg.asset.json";
 import etnaLandscape from "@/assets/etna-landscape.png.asset.json";
-import pizzolaMascot from "@/assets/pizzola-mascot.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -59,12 +58,6 @@ function Index() {
       {/* HERO */}
       <section className="relative pt-16 pb-24 px-5">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_oklch(0.52_0.18_148_/_0.18),_transparent_60%),radial-gradient(ellipse_at_bottom_left,_oklch(0.58_0.22_27_/_0.15),_transparent_55%)]" />
-        <img
-          src={pizzolaMascot.url}
-          alt=""
-          aria-hidden
-          className="hidden md:block absolute bottom-6 left-6 w-40 lg:w-52 -rotate-6 drop-shadow-[0_10px_20px_rgba(0,0,0,0.2)] animate-float pointer-events-none"
-        />
         <div className="max-w-7xl mx-auto grid md:grid-cols-[1.1fr_1fr] gap-12 items-center">
           <div>
             <span className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest">
@@ -176,7 +169,7 @@ function Index() {
             <img
               src={packshot.url}
               alt="CIAO! Sicilian EVOO full packshot — cooking, finishing and infused range"
-              className="w-full h-auto object-contain animate-float drop-shadow-[0_30px_40px_rgba(0,0,0,0.25)] rotate-[-2deg]"
+              className="w-full h-auto object-contain drop-shadow-[0_30px_40px_rgba(0,0,0,0.25)] scale-110"
             />
           </div>
           <div>
@@ -302,7 +295,12 @@ function Index() {
             <article className="bg-[var(--brand-cream)] border-4 border-foreground rounded-3xl p-8 relative overflow-hidden">
               <div className="absolute top-0 left-0 right-0 h-6 checker-band" />
               <div className="flex justify-center my-8 pt-4">
-                <img src={finishingTable.url} alt="CIAO! Finishing — green squeeze bottle on a Sicilian table with burrata, bread, pasta and pizza" className="h-80 w-full object-cover rounded-2xl" />
+                <img
+                  src={finishingTable.url}
+                  alt="CIAO! Finishing — green squeeze bottle on a Sicilian table with burrata, bread, pasta and pizza"
+                  className="h-80 w-full object-cover rounded-2xl"
+                  style={{ objectPosition: "44% 38%" }}
+                />
               </div>
               <h3 className="text-3xl uppercase text-primary">CIAO! Finishing</h3>
               <p className="mt-3 text-muted-foreground">For using after the dish is ready. Perfect for pasta, pizza, salads, bread, eggs, vegetables, meats, fish, bowls and soups.</p>
@@ -357,13 +355,7 @@ function Index() {
       <div className="h-6 checker-band" />
 
       {/* LESS DRESS MORE DRIZZLE */}
-      <section className="py-24 px-5 bg-secondary text-secondary-foreground relative overflow-hidden">
-        <img
-          src={pizzolaMascot.url}
-          alt=""
-          aria-hidden
-          className="hidden md:block absolute top-8 right-8 w-32 lg:w-40 rotate-6 opacity-90 pointer-events-none"
-        />
+      <section className="py-10 md:py-14 px-5 bg-secondary text-secondary-foreground relative overflow-hidden">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
             <span className="text-sm font-bold uppercase tracking-[0.3em] opacity-80">Manifesto</span>
@@ -385,11 +377,11 @@ function Index() {
               I want more flavor
             </a>
           </div>
-          <div className="relative flex justify-center items-center min-h-[700px] md:min-h-[860px]">
+          <div className="relative flex justify-center items-center">
             <img
               src={finishingBottle.url}
               alt="CIAO Finishing bottle"
-              className="h-[760px] md:h-[920px] w-auto object-contain drop-shadow-[0_50px_70px_rgba(0,0,0,0.5)]"
+              className="h-[620px] md:h-[820px] w-auto object-contain drop-shadow-[0_50px_70px_rgba(0,0,0,0.5)]"
             />
           </div>
         </div>
@@ -472,16 +464,16 @@ function Index() {
               ))}
             </ul>
           </div>
-          <div className="relative overflow-hidden border-4 border-foreground rounded-3xl p-8 flex flex-col justify-between text-primary-foreground min-h-[360px]">
+          <div className="relative overflow-hidden border-4 border-foreground rounded-3xl p-8 flex flex-col justify-between text-white min-h-[360px]">
             <div
               className="absolute inset-0 -z-10 bg-cover bg-center"
               style={{ backgroundImage: `url(${etnaLandscape.url})` }}
               aria-hidden
             />
-            <div className="absolute inset-0 -z-10 bg-[linear-gradient(135deg,_oklch(0.58_0.22_27_/_0.78),_oklch(0.45_0.20_27_/_0.65))]" aria-hidden />
+            <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,_rgba(0,0,0,0.15)_0%,_rgba(0,0,0,0.55)_100%)]" aria-hidden />
             <div>
-              <h3 className="text-3xl md:text-4xl uppercase">Premium. Fun.<br/>Truly Sicilian.</h3>
-              <p className="mt-4 opacity-95 drop-shadow">
+              <h3 className="text-3xl md:text-4xl uppercase drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]">Premium. Fun.<br/>Truly Sicilian.</h3>
+              <p className="mt-4 drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]">
                 Other olive oils may look premium. But many have generic origin, little transparency, little personality.
                 CIAO! is made to be <strong>used, displayed and remembered.</strong>
               </p>
@@ -573,18 +565,6 @@ function Index() {
       {/* FINAL CTA */}
       <section className="py-28 px-5 bg-primary text-primary-foreground text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_30%_50%,_white,_transparent_40%),radial-gradient(circle_at_70%_60%,_oklch(0.52_0.18_148),_transparent_45%)]" />
-        <img
-          src={pizzolaMascot.url}
-          alt=""
-          aria-hidden
-          className="hidden md:block absolute bottom-6 left-6 w-36 lg:w-48 -rotate-6 animate-float pointer-events-none"
-        />
-        <img
-          src={pizzolaMascot.url}
-          alt=""
-          aria-hidden
-          className="hidden md:block absolute top-6 right-6 w-28 lg:w-36 rotate-6 opacity-90 pointer-events-none"
-        />
         <div className="relative max-w-3xl mx-auto">
           <h2 className="text-5xl md:text-7xl uppercase leading-[0.95]">
             Cook better.<br/>Finish better.<br/>Eat better.
