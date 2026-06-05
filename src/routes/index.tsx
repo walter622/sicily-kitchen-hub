@@ -458,7 +458,7 @@ function Index() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
           <div className="bg-[var(--brand-cream)] border-4 border-foreground rounded-3xl p-8">
             <h3 className="text-3xl md:text-4xl uppercase">Why CIAO!<br/>and not another?</h3>
-            <ul className="mt-6 space-y-2">
+            <ul className="mt-6 space-y-2 font-[var(--font-mono)]">
               {["Authentic Sicilian origin","Zero blend extra virgin","Organic & Kosher certified","Cold pressed process","Practical squeeze bottle","Modern, desirable design","Clear cooking + finishing strategy","Infused oils & gift packs"].map(x=>(
                 <li key={x} className="flex gap-3"><span className="text-primary font-black">✓</span>{x}</li>
               ))}
