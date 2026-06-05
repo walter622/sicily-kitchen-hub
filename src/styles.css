@@ -189,6 +189,12 @@
   transform: rotate(-3deg);
   display: inline-block;
 }
+/* Small caption labels — Orator Standard surrogate (Anonymous Pro) */
+.uppercase.tracking-\[0\.3em\],
+.uppercase.tracking-widest {
+  font-family: var(--font-mono);
+  font-weight: 700;
+}
 @keyframes drizzle {
   0% { transform: translateY(-10px) rotate(0deg); opacity: 0; }
   20% { opacity: 1; }
