@@ -477,21 +477,21 @@ function Index() {
               ))}
             </ul>
           </div>
-          <div className="relative overflow-hidden border-4 border-foreground rounded-3xl p-8 flex flex-col justify-between text-white min-h-[460px]">
-            <div
-              className="absolute inset-0 -z-10 bg-cover bg-center scale-105"
-              style={{ backgroundImage: `url(${etnaHero.url})` }}
+          <div className="relative overflow-hidden border-4 border-foreground rounded-3xl p-8 flex flex-col justify-between text-white min-h-[460px] bg-primary">
+            <img
+              src={finishingBottle.url}
+              alt="CIAO! Finishing bottle"
+              className="pointer-events-none select-none absolute -right-6 bottom-0 h-[110%] w-auto object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.4)]"
               aria-hidden
             />
-            <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,_rgba(0,0,0,0.25)_0%,_rgba(0,0,0,0.55)_100%)]" aria-hidden />
-            <div>
-              <h3 className="text-3xl md:text-4xl uppercase drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]">Premium. Fun.<br/>Truly Sicilian.</h3>
-              <p className="mt-4 drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]">
+            <div className="relative max-w-[62%]">
+              <h3 className="text-3xl md:text-4xl uppercase drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">Premium. Fun.<br/>Truly Sicilian.</h3>
+              <p className="mt-4 text-white/90">
                 Other olive oils may look premium. But many have generic origin, little transparency, little personality.
                 CIAO! is made to be <strong>used, displayed and remembered.</strong>
               </p>
             </div>
-            <a href="#shop" className="inline-block mt-6 bg-background text-foreground px-7 py-4 font-bold uppercase rounded-full hover:bg-foreground hover:text-background transition self-start">
+            <a href="#shop" className="relative inline-block mt-6 bg-background text-foreground px-7 py-4 font-bold uppercase rounded-full hover:bg-foreground hover:text-background transition self-start">
               Choose CIAO! now
             </a>
           </div>
