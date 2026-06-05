@@ -84,7 +84,7 @@ function Index() {
                 Watch the story
               </a>
             </div>
-            <ul className="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-2 text-sm font-medium">
+            <ul className="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-2 text-sm font-medium font-[var(--font-mono)]">
               {["15% OFF first order","Organic","Zero blend","Cold pressed","Sicilian origin","Kosher certified"].map(x=>(
                 <li key={x} className="flex items-center gap-2">
                   <span className="text-secondary font-black">✓</span>{x}
@@ -182,7 +182,7 @@ function Index() {
             <p className="mt-5 text-lg text-muted-foreground">
               CIAO! combines quality, aesthetics and practicality — a product designed to live on your counter and elevate every meal.
             </p>
-            <ul className="mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-2.5">
+            <ul className="mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-2.5 font-[var(--font-mono)]">
               {[
                 "Sicilian extra virgin olive oil",
                 "Organic product",
@@ -299,7 +299,7 @@ function Index() {
                   src={finishingTable.url}
                   alt="CIAO! Finishing — green squeeze bottle on a Sicilian table with burrata, bread, pasta and pizza"
                   className="h-80 w-full object-cover rounded-2xl"
-                  style={{ objectPosition: "44% 38%" }}
+                  style={{ objectPosition: "center 18%" }}
                 />
               </div>
               <h3 className="text-3xl uppercase text-primary">CIAO! Finishing</h3>
@@ -355,10 +355,10 @@ function Index() {
       <div className="h-6 checker-band" />
 
       {/* LESS DRESS MORE DRIZZLE */}
-      <section className="py-10 md:py-14 px-5 bg-secondary text-secondary-foreground relative overflow-hidden">
+      <section className="py-4 md:py-6 px-5 bg-secondary text-secondary-foreground relative overflow-hidden">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="text-sm font-bold uppercase tracking-[0.3em] opacity-80">Manifesto</span>
+            <span className="text-sm font-bold uppercase tracking-[0.3em] opacity-80 font-[var(--font-mono)]">Manifesto</span>
             <h2 className="mt-3 text-5xl md:text-7xl uppercase leading-[0.9]">
               Less Dress.<br/>
               <span className="text-primary">More Drizzle.</span>
@@ -367,7 +367,7 @@ function Index() {
               Sometimes all a meal needs is a drizzle of real extra virgin olive oil.
               Replace heavy dressings with a simple, premium, flavorful finishing touch.
             </p>
-            <ul className="mt-6 space-y-2 text-base">
+            <ul className="mt-6 space-y-2 text-base font-[var(--font-mono)]">
               <li>→ An ordinary salad becomes memorable.</li>
               <li>→ A simple pasta becomes Italian.</li>
               <li>→ A ready-made pizza becomes gourmet.</li>
@@ -381,7 +381,7 @@ function Index() {
             <img
               src={finishingBottle.url}
               alt="CIAO Finishing bottle"
-              className="h-[620px] md:h-[820px] w-auto object-contain drop-shadow-[0_50px_70px_rgba(0,0,0,0.5)]"
+              className="max-h-[560px] md:max-h-[640px] w-auto object-contain drop-shadow-[0_50px_70px_rgba(0,0,0,0.5)]"
             />
           </div>
         </div>
@@ -458,19 +458,19 @@ function Index() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
           <div className="bg-[var(--brand-cream)] border-4 border-foreground rounded-3xl p-8">
             <h3 className="text-3xl md:text-4xl uppercase">Why CIAO!<br/>and not another?</h3>
-            <ul className="mt-6 space-y-2">
+            <ul className="mt-6 space-y-2 font-[var(--font-mono)]">
               {["Authentic Sicilian origin","Zero blend extra virgin","Organic & Kosher certified","Cold pressed process","Practical squeeze bottle","Modern, desirable design","Clear cooking + finishing strategy","Infused oils & gift packs"].map(x=>(
                 <li key={x} className="flex gap-3"><span className="text-primary font-black">✓</span>{x}</li>
               ))}
             </ul>
           </div>
-          <div className="relative overflow-hidden border-4 border-foreground rounded-3xl p-8 flex flex-col justify-between text-white min-h-[360px]">
+          <div className="relative overflow-hidden border-4 border-foreground rounded-3xl p-8 flex flex-col justify-between text-white min-h-[460px]">
             <div
-              className="absolute inset-0 -z-10 bg-cover bg-center"
+              className="absolute inset-0 -z-10 bg-cover bg-center scale-105"
               style={{ backgroundImage: `url(${etnaLandscape.url})` }}
               aria-hidden
             />
-            <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,_rgba(0,0,0,0.15)_0%,_rgba(0,0,0,0.55)_100%)]" aria-hidden />
+            <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,_rgba(0,0,0,0.05)_0%,_rgba(0,0,0,0.45)_100%)]" aria-hidden />
             <div>
               <h3 className="text-3xl md:text-4xl uppercase drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]">Premium. Fun.<br/>Truly Sicilian.</h3>
               <p className="mt-4 drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]">
