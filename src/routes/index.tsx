@@ -8,6 +8,9 @@ import rosemaryContext from "@/assets/Rosemary_Context.asset.json";
 import finishing from "@/assets/500_FINISHING_AF_BG_ZERO.asset.json";
 import ciaoLogo from "@/assets/ciao-logo.png.asset.json";
 import kitchenSet from "@/assets/kitchen-set.png.asset.json";
+import packshot from "@/assets/ciao-packshot.jpg.asset.json";
+import ciaoCooking from "@/assets/ciao-cooking.png.asset.json";
+import finishingBottle from "@/assets/ciao-finishing-bottle.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -60,7 +63,7 @@ function Index() {
             </span>
             <h1 className="mt-6 text-5xl md:text-7xl leading-[0.95] uppercase text-primary">
               New Cooking<br/>
-              &amp; Finishing<br/>
+              AND Finishing<br/>
               Kit
             </h1>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-xl">
