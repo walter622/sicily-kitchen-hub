@@ -84,7 +84,7 @@ function Index() {
                 Watch the story
               </a>
             </div>
-            <ul className="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-2 text-sm font-medium">
+            <ul className="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-2 text-sm font-medium font-[var(--font-mono)]">
               {["15% OFF first order","Organic","Zero blend","Cold pressed","Sicilian origin","Kosher certified"].map(x=>(
                 <li key={x} className="flex items-center gap-2">
                   <span className="text-secondary font-black">✓</span>{x}
