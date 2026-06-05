@@ -143,7 +143,7 @@ function Index() {
 
 
       {/* WHY CIAO */}
-      <section id="why" className="py-24 px-5 bg-[var(--brand-cream)]">
+      <section id="why" className="py-12 px-5 bg-[var(--brand-cream)]">
         <div className="max-w-5xl mx-auto text-center">
           <span className="text-sm font-bold uppercase tracking-[0.3em] text-primary">Why CIAO!?</span>
           <h2 className="mt-4 text-4xl md:text-6xl uppercase">A Sicilian Ritual.<br/>On Your Table.</h2>
@@ -169,7 +169,7 @@ function Index() {
       <div className="h-6 checker-band" />
 
       {/* PREMIUM. REAL ORIGIN. EVERYDAY USE. */}
-      <section className="py-24 px-5 bg-background">
+      <section className="py-12 px-5 bg-background">
         <div className="max-w-6xl mx-auto grid md:grid-cols-[1fr_1.1fr] gap-12 items-center">
           <div className="relative flex items-center justify-center">
             <img
@@ -214,7 +214,7 @@ function Index() {
       <div className="h-6 checker-band" />
 
       {/* TRUTH ABOUT OLIVE OIL */}
-      <section className="py-24 px-5 bg-foreground text-background">
+      <section className="py-12 px-5 bg-foreground text-background">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <span className="text-sm font-bold uppercase tracking-[0.3em] text-secondary">The Truth</span>
@@ -242,7 +242,7 @@ function Index() {
       <div className="h-6 checker-band" />
 
       {/* VALUE PROPOSITION */}
-      <section className="py-24 px-5 bg-background">
+      <section className="py-12 px-5 bg-background">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-sm font-bold uppercase tracking-[0.3em] text-secondary">Our Value Proposition</span>
@@ -283,7 +283,7 @@ function Index() {
       <div className="h-6 checker-band" />
 
       {/* COOKING + FINISHING */}
-      <section id="cooking" className="py-24 px-5">
+      <section id="cooking" className="py-12 px-5">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <span className="text-sm font-bold uppercase tracking-[0.3em] text-primary font-[var(--font-mono)]">Cooking + Finishing</span>
@@ -325,7 +325,7 @@ function Index() {
       <div className="h-6 checker-band" />
 
       {/* INFUSED OILS */}
-      <section id="infused" className="py-24 px-5 bg-[var(--brand-cream)]">
+      <section id="infused" className="py-12 px-5 bg-[var(--brand-cream)]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <span className="text-sm font-bold uppercase tracking-[0.3em] text-primary">Infused Oils + Gift Packs</span>
@@ -396,7 +396,7 @@ function Index() {
       <div className="h-6 checker-band" />
 
       {/* THE PROOF IS IN THE FLAVOR */}
-      <section className="py-24 px-5 bg-background">
+      <section className="py-12 px-5 bg-background">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-sm font-bold uppercase tracking-[0.3em] text-primary">The Proof</span>
@@ -434,7 +434,7 @@ function Index() {
       <div className="h-6 checker-band" />
 
       {/* WHO IS CIAO FOR — standalone */}
-      <section className="py-24 px-5 bg-[var(--brand-cream)]">
+      <section className="py-12 px-5 bg-[var(--brand-cream)]">
         <div className="max-w-5xl mx-auto text-center">
           <span className="text-sm font-bold uppercase tracking-[0.3em] text-primary">Who is CIAO! for?</span>
           <h2 className="mt-3 text-4xl md:text-6xl uppercase">For people who value<br/>food, quality & experience.</h2>
@@ -460,7 +460,7 @@ function Index() {
       <div className="h-6 checker-band" />
 
       {/* WHY NOT ANOTHER + WHO IS IT FOR */}
-      <section className="py-24 px-5">
+      <section className="py-12 px-5">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
           <div className="bg-[var(--brand-cream)] border-4 border-foreground rounded-3xl p-8">
             <h3 className="text-3xl md:text-4xl uppercase">Why CIAO!<br/>and not another?</h3>
@@ -494,7 +494,7 @@ function Index() {
       <div className="h-6 checker-band" />
 
       {/* SHOP */}
-      <section id="shop" className="py-24 px-5 bg-foreground text-background">
+      <section id="shop" className="py-12 px-5 bg-foreground text-background">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <span className="text-sm font-bold uppercase tracking-[0.3em] text-secondary">Choose your CIAO!</span>
@@ -536,7 +536,7 @@ function Index() {
       <div className="h-6 checker-band" />
 
       {/* FAQ */}
-      <section id="faq" className="py-24 px-5 bg-[var(--brand-cream)]">
+      <section id="faq" className="py-12 px-5 bg-[var(--brand-cream)]">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-sm font-bold uppercase tracking-[0.3em] text-primary">FAQ</span>
@@ -569,7 +569,7 @@ function Index() {
       <div className="h-6 checker-band" />
 
       {/* FINAL CTA */}
-      <section className="py-28 px-5 bg-primary text-primary-foreground text-center relative overflow-hidden">
+      <section className="py-14 px-5 bg-primary text-primary-foreground text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_30%_50%,_white,_transparent_40%),radial-gradient(circle_at_70%_60%,_oklch(0.52_0.18_148),_transparent_45%)]" />
         <div className="relative max-w-3xl mx-auto">
           <h2 className="text-5xl md:text-7xl uppercase leading-[0.95]">
