@@ -13,6 +13,12 @@ import ciaoCooking from "@/assets/ciao-cooking.png.asset.json";
 import finishingBottle from "@/assets/ciao-finishing-bottle.png.asset.json";
 import finishingTable from "@/assets/ciao-finishing-table.jpg.asset.json";
 import etnaLandscape from "@/assets/etna-landscape.png.asset.json";
+import cookingFlat from "@/assets/ciao-cooking-flat.png.asset.json";
+import finishingFlat from "@/assets/ciao-finishing-flat.png.asset.json";
+import truffleFlat from "@/assets/ciao-truffle-flat.png.asset.json";
+import basilFlat from "@/assets/ciao-basil-flat.png.asset.json";
+import chiliFlat from "@/assets/ciao-chili-flat.png.asset.json";
+import rosemaryFlat from "@/assets/ciao-rosemary-flat.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
