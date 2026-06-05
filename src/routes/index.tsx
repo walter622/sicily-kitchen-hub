@@ -355,10 +355,10 @@ function Index() {
       <div className="h-6 checker-band" />
 
       {/* LESS DRESS MORE DRIZZLE */}
-      <section className="py-10 md:py-14 px-5 bg-secondary text-secondary-foreground relative overflow-hidden">
+      <section className="py-4 md:py-6 px-5 bg-secondary text-secondary-foreground relative overflow-hidden">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="text-sm font-bold uppercase tracking-[0.3em] opacity-80">Manifesto</span>
+            <span className="text-sm font-bold uppercase tracking-[0.3em] opacity-80 font-[var(--font-mono)]">Manifesto</span>
             <h2 className="mt-3 text-5xl md:text-7xl uppercase leading-[0.9]">
               Less Dress.<br/>
               <span className="text-primary">More Drizzle.</span>
@@ -367,7 +367,7 @@ function Index() {
               Sometimes all a meal needs is a drizzle of real extra virgin olive oil.
               Replace heavy dressings with a simple, premium, flavorful finishing touch.
             </p>
-            <ul className="mt-6 space-y-2 text-base">
+            <ul className="mt-6 space-y-2 text-base font-[var(--font-mono)]">
               <li>→ An ordinary salad becomes memorable.</li>
               <li>→ A simple pasta becomes Italian.</li>
               <li>→ A ready-made pizza becomes gourmet.</li>
@@ -381,7 +381,7 @@ function Index() {
             <img
               src={finishingBottle.url}
               alt="CIAO Finishing bottle"
-              className="h-[620px] md:h-[820px] w-auto object-contain drop-shadow-[0_50px_70px_rgba(0,0,0,0.5)]"
+              className="max-h-[560px] md:max-h-[640px] w-auto object-contain drop-shadow-[0_50px_70px_rgba(0,0,0,0.5)]"
             />
           </div>
         </div>
