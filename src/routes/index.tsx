@@ -59,6 +59,12 @@ function Index() {
       {/* HERO */}
       <section className="relative pt-16 pb-24 px-5">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_oklch(0.52_0.18_148_/_0.18),_transparent_60%),radial-gradient(ellipse_at_bottom_left,_oklch(0.58_0.22_27_/_0.15),_transparent_55%)]" />
+        <img
+          src={pizzolaMascot.url}
+          alt=""
+          aria-hidden
+          className="hidden md:block absolute bottom-6 left-6 w-40 lg:w-52 -rotate-6 drop-shadow-[0_10px_20px_rgba(0,0,0,0.2)] animate-float pointer-events-none"
+        />
         <div className="max-w-7xl mx-auto grid md:grid-cols-[1.1fr_1fr] gap-12 items-center">
           <div>
             <span className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest">
@@ -352,6 +358,12 @@ function Index() {
 
       {/* LESS DRESS MORE DRIZZLE */}
       <section className="py-24 px-5 bg-secondary text-secondary-foreground relative overflow-hidden">
+        <img
+          src={pizzolaMascot.url}
+          alt=""
+          aria-hidden
+          className="hidden md:block absolute top-8 right-8 w-32 lg:w-40 rotate-6 opacity-90 pointer-events-none"
+        />
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
             <span className="text-sm font-bold uppercase tracking-[0.3em] opacity-80">Manifesto</span>
@@ -561,6 +573,18 @@ function Index() {
       {/* FINAL CTA */}
       <section className="py-28 px-5 bg-primary text-primary-foreground text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_30%_50%,_white,_transparent_40%),radial-gradient(circle_at_70%_60%,_oklch(0.52_0.18_148),_transparent_45%)]" />
+        <img
+          src={pizzolaMascot.url}
+          alt=""
+          aria-hidden
+          className="hidden md:block absolute bottom-6 left-6 w-36 lg:w-48 -rotate-6 animate-float pointer-events-none"
+        />
+        <img
+          src={pizzolaMascot.url}
+          alt=""
+          aria-hidden
+          className="hidden md:block absolute top-6 right-6 w-28 lg:w-36 rotate-6 opacity-90 pointer-events-none"
+        />
         <div className="relative max-w-3xl mx-auto">
           <h2 className="text-5xl md:text-7xl uppercase leading-[0.95]">
             Cook better.<br/>Finish better.<br/>Eat better.
