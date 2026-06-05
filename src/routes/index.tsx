@@ -464,13 +464,13 @@ function Index() {
               ))}
             </ul>
           </div>
-          <div className="relative overflow-hidden border-4 border-foreground rounded-3xl p-8 flex flex-col justify-between text-white min-h-[360px]">
+          <div className="relative overflow-hidden border-4 border-foreground rounded-3xl p-8 flex flex-col justify-between text-white min-h-[460px]">
             <div
-              className="absolute inset-0 -z-10 bg-cover bg-center"
+              className="absolute inset-0 -z-10 bg-cover bg-center scale-105"
               style={{ backgroundImage: `url(${etnaLandscape.url})` }}
               aria-hidden
             />
-            <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,_rgba(0,0,0,0.15)_0%,_rgba(0,0,0,0.55)_100%)]" aria-hidden />
+            <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,_rgba(0,0,0,0.05)_0%,_rgba(0,0,0,0.45)_100%)]" aria-hidden />
             <div>
               <h3 className="text-3xl md:text-4xl uppercase drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]">Premium. Fun.<br/>Truly Sicilian.</h3>
               <p className="mt-4 drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]">
