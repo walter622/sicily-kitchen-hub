@@ -523,8 +523,8 @@ function Index() {
                       alt={p.badge}
                       className={`absolute object-contain z-20 drop-shadow-md pointer-events-none ${
                         p.badgeIconWide
-                          ? "-top-2 -left-3 w-28 md:w-32 h-auto"
-                          : "top-1 left-1 h-16 w-16 md:h-20 md:w-20"
+                          ? "-top-2 -left-3 w-32 md:w-40 h-auto"
+                          : "top-1 left-1 h-20 w-20 md:h-24 md:w-24"
                       }`}
                     />
                   ) : p.badge === "Best Seller" ? (
