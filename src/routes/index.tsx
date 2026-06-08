@@ -28,6 +28,8 @@ import kitchenDuo from "@/assets/ciao-kitchen-set.jpg.asset.json";
 import iconBasil from "@/assets/icon-basil.png.asset.json";
 import iconRosemary from "@/assets/icon-rosemary.png.asset.json";
 import iconChili from "@/assets/icon-chili.png.asset.json";
+import iconCooking from "@/assets/icon-cooking.png.asset.json";
+import iconFinishing from "@/assets/icon-finishing.png.asset.json";
 import iconTruffle from "@/assets/icon-truffle.png.asset.json";
 
 export const Route = createFileRoute("/")({
