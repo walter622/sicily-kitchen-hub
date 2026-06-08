@@ -547,10 +547,10 @@ function Index() {
               { title: "Infused — Rosemary", size: "100ml · 3.38 fl oz", desc: "Herbal, aromatic, Mediterranean.", img: rosemary100.url, badge: "Rosemary", badgeIcon: iconRosemary.url, price: "$12.99" },
             ];
             const infused250 = [
-              { title: "Infused — Truffle", size: "250ml · 8.45 fl oz", desc: "Rich, indulgent, gourmet.", img: truffleFlat.url, badge: "250ml", price: "$19.99" },
-              { title: "Infused — Basil", size: "250ml · 8.45 fl oz", desc: "Fresh Italian basil EVOO.", img: basilFlat.url, badge: "250ml", price: "$19.99" },
-              { title: "Infused — Chili", size: "250ml · 8.45 fl oz", desc: "A bold Sicilian kick.", img: chiliFlat.url, badge: "250ml", price: "$19.99" },
-              { title: "Infused — Rosemary", size: "250ml · 8.45 fl oz", desc: "Herbal, aromatic, Mediterranean.", img: rosemaryFlat.url, badge: "250ml", price: "$19.99" },
+              { title: "Infused — Truffle", size: "250ml · 8.45 fl oz", desc: "Rich, indulgent, gourmet.", img: truffleFlat.url, badge: "250ml", badgeIcon: iconTruffle.url, price: "$19.99" },
+              { title: "Infused — Basil", size: "250ml · 8.45 fl oz", desc: "Fresh Italian basil EVOO.", img: basilFlat.url, badge: "250ml", badgeIcon: iconBasil.url, price: "$19.99" },
+              { title: "Infused — Chili", size: "250ml · 8.45 fl oz", desc: "A bold Sicilian kick.", img: chiliFlat.url, badge: "250ml", badgeIcon: iconChili.url, price: "$19.99" },
+              { title: "Infused — Rosemary", size: "250ml · 8.45 fl oz", desc: "Herbal, aromatic, Mediterranean.", img: rosemaryFlat.url, badge: "250ml", badgeIcon: iconRosemary.url, price: "$19.99" },
             ];
             return (
               <>
