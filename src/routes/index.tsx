@@ -431,7 +431,7 @@ function Index() {
           </div>
           <ul className="grid sm:grid-cols-2 lg:grid-cols-5 gap-3 text-sm">
             {["Positive marketplace reviews","Excellent product acceptance","Growing in the US market","Sensory experience from first use","Complete daily + gift portfolio"].map(x=>(
-              <li key={x} className="bg-secondary text-secondary-foreground rounded-full px-4 py-2.5 text-center font-medium">{x}</li>
+              <li key={x} className="bg-secondary text-secondary-foreground rounded-full px-4 py-2.5 text-center font-medium min-h-[56px] flex items-center justify-center leading-tight">{x}</li>
             ))}
           </ul>
           <div className="text-center mt-10">
