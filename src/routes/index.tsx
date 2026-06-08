@@ -521,10 +521,10 @@ function Index() {
                     <img
                       src={p.badgeIcon}
                       alt={p.badge}
-                      className={`absolute top-2 left-2 object-contain z-20 drop-shadow-md pointer-events-none ${
+                      className={`absolute object-contain z-20 drop-shadow-md pointer-events-none ${
                         p.badgeIconWide
-                          ? "w-36 md:w-44 h-auto"
-                          : "h-20 w-20 md:h-24 md:w-24"
+                          ? "-top-2 -left-3 w-28 md:w-32 h-auto"
+                          : "top-1 left-1 h-16 w-16 md:h-20 md:w-20"
                       }`}
                     />
                   ) : p.badge === "Best Seller" ? (
