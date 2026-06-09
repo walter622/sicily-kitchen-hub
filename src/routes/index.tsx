@@ -659,7 +659,7 @@ function Index() {
             <p className="mt-4 text-xs uppercase tracking-widest text-background/50">www.ciao-sicily.com</p>
           </div>
           {[
-            ["Shop", ["Extra Virgin Olive Oil","Cooking Olive Oil","Finishing Olive Oil","Infused Oils","Gift Pack","Merch"]],
+            ["Shop", ["Extra Virgin Olive Oil","Cooking Olive Oil","Finishing Olive Oil","Infused Oils","Gift Pack"]],
             ["Support", ["Shipping Policy","Privacy Policy","Terms of Service","Contact"]],
             ["Follow", ["Instagram","Facebook","TikTok","Pinterest"]],
           ].map(([title, items])=>(
