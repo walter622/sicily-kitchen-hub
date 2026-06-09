@@ -185,11 +185,16 @@ function Index() {
       {/* PREMIUM. REAL ORIGIN. EVERYDAY USE. */}
       <section className="py-12 px-5 bg-background">
         <div className="max-w-6xl mx-auto grid md:grid-cols-[1fr_1.05fr] gap-12 md:gap-16 items-center">
-          <div className="relative flex items-center justify-center overflow-hidden">
+          <div className="relative flex flex-col items-center justify-center overflow-hidden">
+            <img
+              src={ciaoFullLogo.url}
+              alt="CIAO! Extra Virgin Olive Oil — Prodotto in Italia, Sicilia"
+              className="w-2/3 md:w-3/5 h-auto object-contain mb-2 md:mb-4"
+            />
             <img
               src={packshot.url}
               alt="CIAO! Sicilian EVOO full packshot — cooking, finishing and infused range"
-              className="w-full h-auto object-contain drop-shadow-[0_30px_40px_rgba(0,0,0,0.25)] scale-[1.15] md:scale-[1.2]"
+              className="w-full h-auto object-contain drop-shadow-[0_30px_40px_rgba(0,0,0,0.25)]"
             />
           </div>
           <div className="relative z-10">
