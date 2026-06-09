@@ -651,8 +651,7 @@ function Index() {
       <div className="h-6 checker-band" />
 
       {/* FOOTER */}
-      <footer className="bg-foreground text-background pt-16 pb-8 px-5">
-        <div className="h-2 checker-band -mx-5 mb-12" />
+      <footer className="bg-foreground text-background pt-6 pb-8 px-5">
         <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-10">
           <div>
             <img src={ciaoLogo.url} alt="CIAO! Sicily" className="h-16 w-auto rounded-md" />
