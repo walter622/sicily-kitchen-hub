@@ -9,6 +9,7 @@ import finishing from "@/assets/500_FINISHING_AF_BG_ZERO.asset.json";
 import ciaoLogo from "@/assets/ciao-logo.png.asset.json";
 import kitchenSet from "@/assets/kitchen-set.png.asset.json";
 import packshot from "@/assets/ciao-packshot.jpg.asset.json";
+import ciaoFullLogo from "@/assets/ciao-full-logo.png.asset.json";
 import ciaoCooking from "@/assets/ciao-cooking.png.asset.json";
 import finishingBottle from "@/assets/ciao-finishing-bottle.png.asset.json";
 import finishingTable from "@/assets/ciao-finishing-table.jpg.asset.json";
@@ -184,11 +185,16 @@ function Index() {
       {/* PREMIUM. REAL ORIGIN. EVERYDAY USE. */}
       <section className="py-12 px-5 bg-background">
         <div className="max-w-6xl mx-auto grid md:grid-cols-[1fr_1.05fr] gap-12 md:gap-16 items-center">
-          <div className="relative flex items-center justify-center overflow-hidden">
+          <div className="relative flex flex-col items-center justify-center overflow-hidden">
+            <img
+              src={ciaoFullLogo.url}
+              alt="CIAO! Extra Virgin Olive Oil — Prodotto in Italia, Sicilia"
+              className="w-2/3 md:w-3/5 h-auto object-contain mb-2 md:mb-4"
+            />
             <img
               src={packshot.url}
               alt="CIAO! Sicilian EVOO full packshot — cooking, finishing and infused range"
-              className="w-full h-auto object-contain drop-shadow-[0_30px_40px_rgba(0,0,0,0.25)] scale-[1.15] md:scale-[1.2]"
+              className="w-full h-auto object-contain drop-shadow-[0_30px_40px_rgba(0,0,0,0.25)]"
             />
           </div>
           <div className="relative z-10">
