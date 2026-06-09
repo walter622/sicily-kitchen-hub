@@ -184,7 +184,7 @@ function Index() {
 
       {/* PREMIUM. REAL ORIGIN. EVERYDAY USE. */}
       <section className="py-12 px-5 bg-background">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-[1fr_1.05fr] gap-12 md:gap-16 items-center">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-[1fr_1.05fr] gap-6 md:gap-8 items-center">
           <div className="relative flex flex-col items-center justify-center overflow-hidden">
             <img
               src={ciaoFullLogo.url}
@@ -207,7 +207,7 @@ function Index() {
             <p className="mt-5 text-lg text-muted-foreground">
               CIAO! combines quality, aesthetics and practicality — a product designed to live on your counter and elevate every meal.
             </p>
-            <ul className="mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-2.5 font-[var(--font-mono)]">
+            <ul className="mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-4 font-[var(--font-mono)]">
               {[
                 "Sicilian extra virgin olive oil",
                 "Organic product",
@@ -222,8 +222,8 @@ function Index() {
                 <li key={x} className="flex gap-2 text-sm"><span className="text-secondary font-black">✓</span>{x}</li>
               ))}
             </ul>
-            <p className="mt-6 ciao-script text-3xl text-primary">Use better olive oil every day.</p>
-            <a href="#shop" className="inline-block mt-6 bg-primary text-primary-foreground px-7 py-4 font-bold uppercase rounded-full hover:bg-[var(--brand-red-dark)] transition">
+            <p className="mt-10 ciao-script text-3xl text-primary">Use better olive oil every day.</p>
+            <a href="#shop" className="inline-block mt-8 md:mt-12 bg-primary text-primary-foreground px-7 py-4 font-bold uppercase rounded-full hover:bg-[var(--brand-red-dark)] transition">
               Choose my CIAO! now
             </a>
           </div>
