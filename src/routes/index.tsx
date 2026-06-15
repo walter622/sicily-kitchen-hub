@@ -12,6 +12,7 @@ import packshot from "@/assets/ciao-packshot.jpg.asset.json";
 import ciaoFullLogo from "@/assets/ciao-full-logo.png.asset.json";
 import ciaoCooking from "@/assets/ciao-cooking.png.asset.json";
 import finishingBottle from "@/assets/ciao-finishing-bottle.png.asset.json";
+import pastaTable from "@/assets/ciao-pasta-table.jpg.asset.json";
 import finishingTable from "@/assets/ciao-finishing-table.jpg.asset.json";
 import etnaLandscape from "@/assets/etna-landscape.png.asset.json";
 import etnaHero from "@/assets/etna-hero.png.asset.json";
@@ -404,9 +405,9 @@ function Index() {
           </div>
           <div className="relative flex justify-center items-center">
             <img
-              src={finishingBottle.url}
-              alt="CIAO Finishing bottle"
-              className="max-h-[560px] md:max-h-[640px] w-auto object-contain drop-shadow-[0_50px_70px_rgba(0,0,0,0.5)]"
+              src={pastaTable.url}
+              alt="CIAO! Extra Virgin Olive Oil bottle with fresh pasta, basil, eggs and tomatoes on a kitchen table"
+              className="max-h-[560px] md:max-h-[640px] w-auto object-cover rounded-2xl drop-shadow-[0_30px_50px_rgba(0,0,0,0.4)]"
             />
           </div>
         </div>
